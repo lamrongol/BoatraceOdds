@@ -1,12 +1,5 @@
-# 🚤 Boatrace Open API for Previews
-
-[![cron](https://github.com/BoatraceOpenAPI/previews/actions/workflows/cron.yml/badge.svg)](https://github.com/BoatraceOpenAPI/previews/actions/workflows/cron.yml)
-[![pages-build-deployment](https://github.com/BoatraceOpenAPI/previews/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/BoatraceOpenAPI/previews/actions/workflows/pages/pages-build-deployment)
-[![issues](https://img.shields.io/github/issues/BoatraceOpenAPI/previews.svg)](https://github.com/BoatraceOpenAPI/previews/issues)
-[![pulls](https://img.shields.io/github/issues-pr/BoatraceOpenAPI/previews.svg)](https://github.com/BoatraceOpenAPI/previews/pulls)
-[![license](https://img.shields.io/badge/license-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![v3](https://img.shields.io/badge/Boatrace_Open_API_for_Previews-v3-blue)](https://github.com/BoatraceOpenAPI/previews/tree/gh-pages/docs/v3)
-[![v2](https://img.shields.io/badge/Boatrace_Open_API_for_Previews-v2-lightgrey)](https://github.com/BoatraceOpenAPI/previews/tree/gh-pages/docs/v2)
+# 🚤 Boatrace Open API for Odds
+こちらは https://github.com/BoatraceOpenAPI/previews を元にしたオッズ版です
 
 ## ⚠️ 注意事項
 >
@@ -21,16 +14,16 @@
 
 ## 🌐 エンドポイント
 
-### [![v3](https://img.shields.io/badge/Boatrace_Open_API_for_Previews-v3-blue)](https://github.com/BoatraceOpenAPI/previews/tree/gh-pages/docs/v3)
+### [v3](https://github.com/lamrongol/BoatraceOdds/tree/gh-pages/docs/v3)
 
 ```bash
-https://boatraceopenapi.github.io/previews/v3/YYYY/YYYYMMDD.json
+https://lamrongol.github.io/odds/v3/YYYY/YYYYMMDD.json
 ```
 
-### [![v2](https://img.shields.io/badge/Boatrace_Open_API_for_Previews-v2-lightgrey)](https://github.com/BoatraceOpenAPI/previews/tree/gh-pages/docs/v2)
+### [v2](https://github.com/lamrongol/BoatraceOdds/tree/gh-pages/docs/v2)
 
 ```bash
-https://boatraceopenapi.github.io/previews/v2/YYYY/YYYYMMDD.json
+https://lamrongol.github.io/odds/v2/YYYY/YYYYMMDD.json
 ```
 
 📅 YYYY → 年<br>
@@ -41,19 +34,19 @@ https://boatraceopenapi.github.io/previews/v2/YYYY/YYYYMMDD.json
 
 ## 🧩 サンプル
 
-### [![v3](https://img.shields.io/badge/Boatrace_Open_API_for_Previews-v3-blue)](https://github.com/BoatraceOpenAPI/previews/tree/gh-pages/docs/v3)
+### [v3](https://github.com/lamrongol/BoatraceOdds/tree/gh-pages/docs/v3)
 
-- 2026年03月22日の直前情報
+<!-- - 2026年03月22日の直前情報
   - [https://boatraceopenapi.github.io/previews/v3/2026/20260322.json](https://boatraceopenapi.github.io/previews/v3/2026/20260322.json)
 - 本日の直前情報（ JST〔UTC+9〕基準 ）
-  - [https://boatraceopenapi.github.io/previews/v3/today.json](https://boatraceopenapi.github.io/previews/v3/today.json)
+  - [https://boatraceopenapi.github.io/previews/v3/today.json](https://boatraceopenapi.github.io/previews/v3/today.json) -->
 
-### [![v2](https://img.shields.io/badge/Boatrace_Open_API_for_Previews-v2-lightgrey)](https://github.com/BoatraceOpenAPI/previews/tree/gh-pages/docs/v2)
+### [v2](https://github.com/lamrongol/BoatraceOdds/tree/gh-pages/docs/v2)
 
-- 2026年03月22日の直前情報
+<!-- - 2026年03月22日の直前情報
   - [https://boatraceopenapi.github.io/previews/v2/2026/20260322.json](https://boatraceopenapi.github.io/previews/v2/2026/20260322.json)
 - 本日の直前情報（ JST〔UTC+9〕基準 ）
-  - [https://boatraceopenapi.github.io/previews/v2/today.json](https://boatraceopenapi.github.io/previews/v2/today.json)
+  - [https://boatraceopenapi.github.io/previews/v2/today.json](https://boatraceopenapi.github.io/previews/v2/today.json) -->
 
 ## 🔗 関連リポジトリ
 | 🏷️ 対象 | 📂 リポジトリ |

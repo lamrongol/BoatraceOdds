@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace BOA\Previews\Tests;
+namespace BOA\Odds\Tests;
 
-use BOA\Previews\PreviewSaver;
+use BOA\Odds\OddsSaver;
 use PHPUnit\Framework\TestCase;
 
 /**
  * @author shimomo
  */
-final class PreviewSaverTest extends TestCase
+final class OddsSaverTest extends TestCase
 {
     /**
      * @psalm-var non-empty-string
@@ -27,7 +27,7 @@ final class PreviewSaverTest extends TestCase
     protected function setUp(): void
     {
         parent::setUp();
-        $this->tempDir = sys_get_temp_dir() . '/preview_saver_test_' . bin2hex(random_bytes(8));
+        $this->tempDir = sys_get_temp_dir() . '/odd_saver_test_' . bin2hex(random_bytes(8));
         if (!mkdir($this->tempDir, 0755, true) && !is_dir($this->tempDir)) {
             $this->fail('Failed to create temp dir: ' . $this->tempDir);
         }
@@ -61,40 +61,33 @@ final class PreviewSaverTest extends TestCase
      */
     public function testSave(): void
     {
-        $saver = new PreviewSaver();
-        $path = $this->tempDir . '/previews.json';
+        $saver = new OddsSaver();
+        $path = $this->tempDir . '/odds.json';
 
-        $previews = [
+        $odds = [
             [
-                'date' => '2025-07-15',
-                'stadium_number' => 1,
+                'date' => '2025-01-01',
+                'stadium_number' => 24,
                 'number' => 1,
-                'wind_speed' => 4,
-                'wind_direction_number' => 10,
-                'wave_height' => 3,
-                'weather_number' => 2,
-                'air_temperature' => 26,
-                'water_temperature' => 27,
-                'boats' => [
+                'win_odds' => [
                     [
-                        'racer_boat_number' => 1,
-                        'racer_course_number' => 1,
-                        'racer_start_timing' => 0.09,
-                        'racer_weight' => 52.3,
-                        'racer_weight_adjustment' => 0,
-                        'racer_exhibition_time' => 6.87,
-                        'racer_tilt_adjustment' => 0,
+                        1 => 1.6,
+                        2 => 3.7,
+                        3 => 6,
+                        4 => 7.6,
+                        5 => 13,
+                        6 => 12.2,
                     ],
                 ],
             ],
         ];
 
-        $saver->save($previews, $path);
+        $saver->save($odds, $path);
 
         $this->assertFileExists($path);
 
         $content = json_decode(file_get_contents($path), true);
-        $this->assertArrayHasKey('previews', $content);
-        $this->assertSame($previews, $content['previews']);
+        $this->assertArrayHasKey('odds', $content);
+        $this->assertSame($odds, $content['odds']);
     }
 }

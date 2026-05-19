@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BOA\Previews;
+namespace BOA\Odds;
 
 use Carbon\CarbonInterface;
 
@@ -42,5 +42,5 @@ interface ScraperInterface
      * @param \Carbon\CarbonInterface $date
      * @return array
      */
-    public function scrapePreviews(CarbonInterface $date): array;
+    public function scrapeOdds(CarbonInterface $date): array;
 }

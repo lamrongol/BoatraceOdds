@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BOA\Previews;
+namespace BOA\Odds;
 
 use Carbon\CarbonImmutable as Carbon;
 use Carbon\CarbonInterface;
@@ -13,10 +13,10 @@ use Carbon\CarbonInterface;
  *
  * @author shimomo
  */
-final class PreviewScraper
+final class OddsScraper
 {
     /**
-     * @psalm-param \BOA\Previews\ScraperInterface $scraper
+     * @psalm-param \BOA\Odds\ScraperInterface $scraper
      *
      * @param \BOA\Results\ScraperInterface $scraper
      */
@@ -35,33 +35,33 @@ final class PreviewScraper
     public function scrape(CarbonInterface|string $date = 'today'): array
     {
         $date = Carbon::parse($date, 'Asia/Tokyo');
-        /** @psalm-var ScrapedStadiumRaces $previews */
-        $previews = $this->scraper->scrapePreviews($date);
-        return $this->normalize($previews);
+        /** @psalm-var ScrapedStadiumRaces $odds */
+        $odds = $this->scraper->scrapeOdds($date);
+        return $this->normalize($odds);
     }
 
     /**
-     * @psalm-param ScrapedStadiumRaces $previews
+     * @psalm-param ScrapedStadiumRaces $odds
      * @psalm-return ScrapedRaces
      *
      * @param array $results
      * @return array
      */
-    private function normalize(array $previews): array
+    private function normalize(array $odds): array
     {
-        $newPreviews = [];
+        $newOdds = [];
 
-        foreach (array_values($previews) as $data) {
-            foreach (array_values($data) as $preview) {
-                $previews['boats'] = isset($preview['boats'])
-                    ? array_values($preview['boats'])
+        foreach (array_values($odds) as $data) {
+            foreach (array_values($data) as $odd) {
+                $odds['boats'] = isset($odd['boats'])
+                    ? array_values($odd['boats'])
                     : [];
 
-                $newPreviews[] = $preview;
+                $newOdds[] = $odd;
             }
         }
 
         /** @psalm-var ScrapedRaces */
-        return $newPreviews;
+        return $newOdds;
     }
 }

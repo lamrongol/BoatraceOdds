@@ -4,5 +4,5 @@ namespace BVP\Scraper;
 
 final class Scraper
 {
-    public function scrapePreviews(mixed ...$arguments);
+    public function scrapeOdds(mixed ...$arguments);
 }

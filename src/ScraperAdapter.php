@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BOA\Previews;
+namespace BOA\Odds;
 
 use BVP\Scraper\Scraper;
 use Carbon\CarbonInterface;
@@ -32,9 +32,9 @@ final class ScraperAdapter implements ScraperInterface
      * @return array
      */
     #[\Override]
-    public function scrapePreviews(CarbonInterface $date): array
+    public function scrapeOdds(CarbonInterface $date): array
     {
         /** @psalm-var ScrapedStadiumRaces */
-        return $this->scraper->scrapePreviews($date);
+        return $this->scraper->scrapeOdds($date);
     }
 }

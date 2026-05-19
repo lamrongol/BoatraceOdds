@@ -1,18 +1,24 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "boa/previews",
-    "description": "Boatrace Open API for Previews",
+    "name": "boa/odds",
+    "description": "Boatrace Open API for Odds",
     "license": "MIT",
     "type": "library",
     "authors": [
+        {
+            "name": "@lamrongol",
+            "email": "lamrongol@gmail.com",
+        }
+    ],
+    "original_authors": [
         {
             "name": "shimomo",
             "email": "boa@shimomo.net"
         }
     ],
     "support": {
-        "issues": "https://github.com/BoatraceOpenAPI/previews/issues",
-        "source": "https://github.com/BoatraceOpenAPI/previews"
+        "issues": "https://github.com/lamrongol/BoatraceOdds/issues",
+        "source": "https://github.com/lamrongol/BoatraceOdds"
     },
     "require": {
         "php": "^8.4",
@@ -25,12 +31,12 @@
     },
     "autoload": {
         "psr-4": {
-            "BOA\\Previews\\": "src/"
+            "BOA\\Odds\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BOA\\Previews\\Tests\\": "tests/"
+            "BOA\\Odds\\Tests\\": "tests/"
         }
     }
 }
