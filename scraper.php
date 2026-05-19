@@ -12,9 +12,17 @@ use Carbon\CarbonImmutable as Carbon;
 
 // コマンドライン引数からバージョンを取得（デフォルトは v3）
 $version = $argv[1] ?? 'v3';
+$day_specified = ($argc == 3 && $argv[2] == 'True');
 
 // 本日の日付を東京時間で取得
 $date = Carbon::yesterday('Asia/Tokyo');
+if ($day_specified) {
+    $date = new Carbon(file_get_contents("docs/{$version}/recorded_day.json"));
+    $date = $date->subDay();
+    if ($date->isBefore(Carbon::parse('2020-01-01'))) {
+        exit;
+    }
+}
 
 // v2 or v3 の場合のみ OddsScraper を利用してオッズデータを取得
 if ($version === 'v2' || $version === 'v3') {
@@ -37,3 +45,7 @@ if (empty($odds ?? [])) {
 $storage = new OddsSaver();
 $storage->save($odds, "docs/{$version}/" . $date->format('Y') . '/' . $date->format('Ymd') . '.json');
 $storage->save($odds, "docs/{$version}/yesterday.json");
+
+if ($day_specified) {
+    file_put_contents("docs/{$version}/recorded_day.json", $date->toDateString());
+}
