@@ -17,8 +17,6 @@ final class OddsScraper
 {
     /**
      * @psalm-param \BOA\Odds\ScraperInterface $scraper
-     *
-     * @param \BOA\Results\ScraperInterface $scraper
      */
     public function __construct(private readonly ScraperInterface $scraper)
     {
@@ -30,7 +28,6 @@ final class OddsScraper
      * @psalm-return ScrapedRaces
      *
      * @param \Carbon\CarbonInterface|string $date
-     * @return array<int, NormalizedRaces>
      */
     public function scrape(CarbonInterface|string $date = 'today'): array
     {
@@ -44,7 +41,7 @@ final class OddsScraper
      * @psalm-param ScrapedStadiumRaces $odds
      * @psalm-return ScrapedRaces
      *
-     * @param array $results
+     * @param array $odds
      * @return array
      */
     private function normalize(array $odds): array
@@ -53,9 +50,12 @@ final class OddsScraper
 
         foreach (array_values($odds) as $data) {
             foreach (array_values($data) as $odd) {
-                $odds['boats'] = isset($odd['boats'])
-                    ? array_values($odd['boats'])
-                    : [];
+                $oddsKeys = ['trifecta_odds', 'trio_odds', 'exacta_odds', 'quinella_place_odds', 'quinella_odds', 'win_odds', 'place_odds'];
+                foreach ($oddsKeys as $key) {
+                    $odds[$key] = isset($odds[$key])
+                        ? array_values($odds[$key])
+                        : [];
+                }
 
                 $newOdds[] = $odd;
             }
