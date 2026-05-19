@@ -1,3 +1,4 @@
+[![cron](https://github.com/lamrongol/BoatraceOdds/actions/workflows/cron.yml/badge.svg)](https://github.com/lamrongol/BoatraceOdds/actions/workflows/cron.yml)
 # 🚤 Boatrace Open API for Odds
 こちらは https://github.com/BoatraceOpenAPI/previews を元にしたオッズ版です
 
