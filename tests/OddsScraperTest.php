@@ -25,12 +25,12 @@ final class OddsScraperTest extends TestCase
     {
         $mockScraper = $this->createMock(ScraperInterface::class);
         $mockScraper->method('scrapeOdds')
-            ->with(Carbon::create(2025, 7, 15))
+            ->with(Carbon::create(2025, 1, 1))
             ->willReturn([
                 $this->testScrapeData(0),
             ]);
         $scraper = new OddsScraper($mockScraper);
-        $odds = $scraper->scrape(Carbon::create(2025, 7, 15));
+        $odds = $scraper->scrape(Carbon::create(2025, 1, 1));
         $this->assertSame($this->testScrapeData(0), $odds);
     }
 
