@@ -1,4 +1,4 @@
-name: cron
+name: run_once
 
 on:
   workflow_dispatch:
