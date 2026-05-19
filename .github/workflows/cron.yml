@@ -2,7 +2,8 @@ name: cron
 
 on:
   schedule:
-    - cron: '0,30 * * * *'
+    - cron: "30 5 * * 1-5"
+      timezone: "Asia/Tokyo"
   workflow_dispatch:
 
 concurrency:

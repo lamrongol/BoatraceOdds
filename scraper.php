@@ -14,7 +14,7 @@ use Carbon\CarbonImmutable as Carbon;
 $version = $argv[1] ?? 'v3';
 
 // 本日の日付を東京時間で取得
-$date = Carbon::today('Asia/Tokyo');
+$date = Carbon::yesterday('Asia/Tokyo');
 
 // v2 or v3 の場合のみ OddsScraper を利用してオッズデータを取得
 if ($version === 'v2' || $version === 'v3') {
@@ -33,7 +33,7 @@ if (empty($odds ?? [])) {
 
 // オッズデータを JSON ファイルとして保存
 // 日付付きの JSON ファイルとして保存（例: docs/v3/2026/20260322.json）
-// 最新データとして today.json にも保存
+// 最新データとして yesterday.json にも保存
 $storage = new OddsSaver();
 $storage->save($odds, "docs/{$version}/" . $date->format('Y') . '/' . $date->format('Ymd') . '.json');
-$storage->save($odds, "docs/{$version}/today.json");
+$storage->save($odds, "docs/{$version}/yesterday.json");
