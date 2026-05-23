@@ -44,8 +44,9 @@ if (empty($odds ?? [])) {
 // 最新データとして yesterday.json にも保存
 $storage = new OddsSaver();
 $storage->save($odds, "docs/{$version}/" . $date->format('Y') . '/' . $date->format('Ymd') . '.json');
-$storage->save($odds, "docs/{$version}/today.json");
 
 if ($day_specified) {
     file_put_contents("docs/{$version}/recorded_day.json", $date->toDateString());
+} else {
+    $storage->save($odds, "docs/{$version}/today.json");
 }
