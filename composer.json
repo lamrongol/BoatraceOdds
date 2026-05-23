@@ -21,7 +21,7 @@
     "require": {
         "php": "^8.4",
         "nesbot/carbon": "^2.63 || ^3.0",
-        "bvp/scraper": "^5.0"
+        "bvp/scraper": "^6.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^12.0",
