@@ -18,13 +18,7 @@
 ### [v3](https://github.com/lamrongol/BoatraceOdds/tree/gh-pages/docs/v3)
 
 ```bash
-https://lamrongol.github.io/odds/v3/YYYY/YYYYMMDD.json
-```
-
-### [v2](https://github.com/lamrongol/BoatraceOdds/tree/gh-pages/docs/v2)
-
-```bash
-https://lamrongol.github.io/odds/v2/YYYY/YYYYMMDD.json
+https://lamrongol.github.io/BoatraceOdds/v3/YYYY/YYYYMMDD.json
 ```
 
 📅 YYYY → 年<br>
@@ -37,17 +31,10 @@ https://lamrongol.github.io/odds/v2/YYYY/YYYYMMDD.json
 
 ### [v3](https://github.com/lamrongol/BoatraceOdds/tree/gh-pages/docs/v3)
 
-<!-- - 2026年03月22日の直前情報
-  - [https://boatraceopenapi.github.io/previews/v3/2026/20260322.json](https://boatraceopenapi.github.io/previews/v3/2026/20260322.json)
-- 本日の直前情報（ JST〔UTC+9〕基準 ）
-  - [https://boatraceopenapi.github.io/previews/v3/today.json](https://boatraceopenapi.github.io/previews/v3/today.json) -->
-
-### [v2](https://github.com/lamrongol/BoatraceOdds/tree/gh-pages/docs/v2)
-
-<!-- - 2026年03月22日の直前情報
-  - [https://boatraceopenapi.github.io/previews/v2/2026/20260322.json](https://boatraceopenapi.github.io/previews/v2/2026/20260322.json)
-- 本日の直前情報（ JST〔UTC+9〕基準 ）
-  - [https://boatraceopenapi.github.io/previews/v2/today.json](https://boatraceopenapi.github.io/previews/v2/today.json) -->
+ - 2026年05月18日のオッズ
+  - [https://lamrongol.github.io/BoatraceOdds/v3/2026/20260518.json](https://lamrongol.github.io/BoatraceOdds/v3/2026/20260518.json)
+ 本日のオッズ（ JST〔UTC+9〕基準 ）
+  - [https://lamrongol.github.io/BoatraceOdds/v3/today.json](https://lamrongol.github.io/BoatraceOdds/v3/today.json) 
 
 ## 🔗 関連リポジトリ
 | 🏷️ 対象 | 📂 リポジトリ |

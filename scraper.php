@@ -15,9 +15,9 @@ $version = $argv[1] ?? 'v3';
 $day_specified = ($argc == 3 && $argv[2] == 'True');
 
 // 本日の日付を東京時間で取得
-$date = Carbon::yesterday('Asia/Tokyo');
+$date = Carbon::today('Asia/Tokyo');
 if ($day_specified) {
-    $date = new Carbon(file_get_contents("docs/{$version}/recorded_day.json"));
+    $date = new Carbon(file_get_contents("docs/{$version}/recorded_day.json"))->timezone('Asia/Tokyo');
     $date = $date->subDay();
     if ($date->isBefore(Carbon::parse('2020-01-01'))) {
         exit;
@@ -44,7 +44,7 @@ if (empty($odds ?? [])) {
 // 最新データとして yesterday.json にも保存
 $storage = new OddsSaver();
 $storage->save($odds, "docs/{$version}/" . $date->format('Y') . '/' . $date->format('Ymd') . '.json');
-$storage->save($odds, "docs/{$version}/yesterday.json");
+$storage->save($odds, "docs/{$version}/today.json");
 
 if ($day_specified) {
     file_put_contents("docs/{$version}/recorded_day.json", $date->toDateString());
