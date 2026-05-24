@@ -4,33 +4,31 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4b001dbf3ae1c0f29ceb8e479a23b50e",
+    "content-hash": "ebaa9bab42c2776bfa8df3e278052c9d",
     "packages": [
         {
             "name": "bvp/converter",
-            "version": "6.0.0",
+            "version": "5.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/shimomo/bvp-converter.git",
-                "reference": "cd177c1f61bae4f8cc6dfaf9a4ef37d18b082318"
+                "reference": "eaf69727fe7f6e92aa8762cf4e5c783037a09841"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/shimomo/bvp-converter/zipball/cd177c1f61bae4f8cc6dfaf9a4ef37d18b082318",
-                "reference": "cd177c1f61bae4f8cc6dfaf9a4ef37d18b082318",
+                "url": "https://api.github.com/repos/shimomo/bvp-converter/zipball/eaf69727fe7f6e92aa8762cf4e5c783037a09841",
+                "reference": "eaf69727fe7f6e92aa8762cf4e5c783037a09841",
                 "shasum": ""
             },
             "require": {
-                "bvp/prefecture": "^6.0",
-                "bvp/stadium": "^6.0",
-                "bvp/trimmer": "^6.0",
+                "bvp/prefecture": "^5.0",
+                "bvp/stadium": "^5.0",
+                "bvp/trimmer": "^5.0",
                 "php": "^8.2",
                 "shimomo/helper": "^0.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "^10.1 || ^11.1 || ^12.0",
-                "squizlabs/php_codesniffer": "^3.0",
-                "vimeo/psalm": "^6.0"
+                "phpunit/phpunit": "^10.1 || ^11.1 || ^12.0"
             },
             "type": "library",
             "autoload": {
@@ -48,7 +46,7 @@
                     "email": "bvp@shimomo.net"
                 }
             ],
-            "description": "Converter for Boatrace Venture Project",
+            "description": "The BVP Converter for Boatrace.",
             "keywords": [
                 "boatrace",
                 "converter",
@@ -58,20 +56,20 @@
                 "issues": "https://github.com/shimomo/bvp-converter/issues",
                 "source": "https://github.com/shimomo/bvp-converter"
             },
-            "time": "2025-12-31T06:07:41+00:00"
+            "time": "2025-08-15T02:42:25+00:00"
         },
         {
             "name": "bvp/prefecture",
-            "version": "6.0.0",
+            "version": "5.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/shimomo/bvp-prefecture.git",
-                "reference": "8474a6c2127538f3f25e3b52f236f6713a67b5af"
+                "reference": "88d65e3f78b9995d0d1f4791494f4aa8ebc0a963"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/shimomo/bvp-prefecture/zipball/8474a6c2127538f3f25e3b52f236f6713a67b5af",
-                "reference": "8474a6c2127538f3f25e3b52f236f6713a67b5af",
+                "url": "https://api.github.com/repos/shimomo/bvp-prefecture/zipball/88d65e3f78b9995d0d1f4791494f4aa8ebc0a963",
+                "reference": "88d65e3f78b9995d0d1f4791494f4aa8ebc0a963",
                 "shasum": ""
             },
             "require": {
@@ -79,9 +77,7 @@
                 "shimomo/helper": "^0.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "^10.1 || ^11.1 || ^12.0",
-                "squizlabs/php_codesniffer": "^3.0",
-                "vimeo/psalm": "^6.0"
+                "phpunit/phpunit": "^10.1 || ^11.1 || ^12.0"
             },
             "type": "library",
             "autoload": {
@@ -99,7 +95,7 @@
                     "email": "bvp@shimomo.net"
                 }
             ],
-            "description": "Prefecture for Boatrace Venture Project",
+            "description": "The BVP Prefecture for Japan.",
             "keywords": [
                 "boatrace",
                 "library",
@@ -109,35 +105,33 @@
                 "issues": "https://github.com/shimomo/bvp-prefecture/issues",
                 "source": "https://github.com/shimomo/bvp-prefecture"
             },
-            "time": "2025-12-31T03:17:34+00:00"
+            "time": "2025-08-15T02:37:57+00:00"
         },
         {
             "name": "bvp/scraper",
-            "version": "6.1.2",
+            "version": "5.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/shimomo/bvp-scraper.git",
-                "reference": "e9af7c3cdd15842ae81071e43f10efc1e73e6f18"
+                "reference": "162b13e5718ea1126ef979c04dbe4fabb5afa887"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/shimomo/bvp-scraper/zipball/e9af7c3cdd15842ae81071e43f10efc1e73e6f18",
-                "reference": "e9af7c3cdd15842ae81071e43f10efc1e73e6f18",
+                "url": "https://api.github.com/repos/shimomo/bvp-scraper/zipball/162b13e5718ea1126ef979c04dbe4fabb5afa887",
+                "reference": "162b13e5718ea1126ef979c04dbe4fabb5afa887",
                 "shasum": ""
             },
             "require": {
-                "bvp/converter": "^6.0",
-                "bvp/trimmer": "^6.0",
+                "bvp/converter": "^5.3",
+                "bvp/trimmer": "^5.3",
                 "nesbot/carbon": "^2.63 || ^3.0",
                 "php": "^8.2",
-                "symfony/browser-kit": "^6.0 || ^7.0 || ^8.0",
-                "symfony/css-selector": "^6.0 || ^7.0 || ^8.0",
-                "symfony/http-client": "^6.0 || ^7.0 || ^8.0"
+                "symfony/browser-kit": "^6.0 || ^7.0",
+                "symfony/css-selector": "^6.0 || ^7.0",
+                "symfony/http-client": "^6.0 || ^7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^10.1 || ^11.1 || ^12.0",
-                "squizlabs/php_codesniffer": "^3.0",
-                "vimeo/psalm": "^6.0"
+                "phpunit/phpunit": "^10.1 || ^11.1 || ^12.0"
             },
             "type": "library",
             "autoload": {
@@ -165,20 +159,20 @@
                 "issues": "https://github.com/shimomo/bvp-scraper/issues",
                 "source": "https://github.com/shimomo/bvp-scraper"
             },
-            "time": "2026-03-23T19:24:05+00:00"
+            "time": "2025-10-02T12:18:45+00:00"
         },
         {
             "name": "bvp/stadium",
-            "version": "6.0.1",
+            "version": "5.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/shimomo/bvp-stadium.git",
-                "reference": "e1b41b04c84d0db4eb5ab3b167454e55429b5507"
+                "reference": "d28e6e2b72cfb407da557f0b1b8e52021f267f1a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/shimomo/bvp-stadium/zipball/e1b41b04c84d0db4eb5ab3b167454e55429b5507",
-                "reference": "e1b41b04c84d0db4eb5ab3b167454e55429b5507",
+                "url": "https://api.github.com/repos/shimomo/bvp-stadium/zipball/d28e6e2b72cfb407da557f0b1b8e52021f267f1a",
+                "reference": "d28e6e2b72cfb407da557f0b1b8e52021f267f1a",
                 "shasum": ""
             },
             "require": {
@@ -216,20 +210,20 @@
                 "issues": "https://github.com/shimomo/bvp-stadium/issues",
                 "source": "https://github.com/shimomo/bvp-stadium"
             },
-            "time": "2026-03-22T05:04:48+00:00"
+            "time": "2025-09-26T15:20:52+00:00"
         },
         {
             "name": "bvp/trimmer",
-            "version": "6.0.0",
+            "version": "5.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/shimomo/bvp-trimmer.git",
-                "reference": "1bb7d917dd1de25cf4c0cf6859cb6acae70223c0"
+                "reference": "9b8f9207ad35bad61982bfaff72d0cb9f1a25f70"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/shimomo/bvp-trimmer/zipball/1bb7d917dd1de25cf4c0cf6859cb6acae70223c0",
-                "reference": "1bb7d917dd1de25cf4c0cf6859cb6acae70223c0",
+                "url": "https://api.github.com/repos/shimomo/bvp-trimmer/zipball/9b8f9207ad35bad61982bfaff72d0cb9f1a25f70",
+                "reference": "9b8f9207ad35bad61982bfaff72d0cb9f1a25f70",
                 "shasum": ""
             },
             "require": {
@@ -237,9 +231,7 @@
                 "php": "^8.2"
             },
             "require-dev": {
-                "phpunit/phpunit": "^10.1 || ^11.1 || ^12.0",
-                "squizlabs/php_codesniffer": "^3.0",
-                "vimeo/psalm": "^6.0"
+                "phpunit/phpunit": "^10.1 || ^11.1 || ^12.0"
             },
             "type": "library",
             "autoload": {
@@ -257,7 +249,7 @@
                     "email": "bvp@shimomo.net"
                 }
             ],
-            "description": "Trimmer for Boatrace Venture Project",
+            "description": "The BVP Trimmer for strings, arrays, and objects.",
             "keywords": [
                 "boatrace",
                 "library",
@@ -267,7 +259,7 @@
                 "issues": "https://github.com/shimomo/bvp-trimmer/issues",
                 "source": "https://github.com/shimomo/bvp-trimmer"
             },
-            "time": "2025-12-31T03:23:41+00:00"
+            "time": "2025-08-15T02:16:05+00:00"
         },
         {
             "name": "carbonphp/carbon-doctrine-types",
@@ -699,27 +691,28 @@
         },
         {
             "name": "symfony/browser-kit",
-            "version": "v8.0.8",
+            "version": "v7.4.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/browser-kit.git",
-                "reference": "f5a28fca785416cf489dd579011e74c831100cc3"
+                "reference": "41850d8f8ddef9a9cd7314fa9f4902cf48885521"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/browser-kit/zipball/f5a28fca785416cf489dd579011e74c831100cc3",
-                "reference": "f5a28fca785416cf489dd579011e74c831100cc3",
+                "url": "https://api.github.com/repos/symfony/browser-kit/zipball/41850d8f8ddef9a9cd7314fa9f4902cf48885521",
+                "reference": "41850d8f8ddef9a9cd7314fa9f4902cf48885521",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.4",
-                "symfony/dom-crawler": "^7.4|^8.0"
+                "php": ">=8.2",
+                "symfony/deprecation-contracts": "^2.5|^3",
+                "symfony/dom-crawler": "^6.4|^7.0|^8.0"
             },
             "require-dev": {
-                "symfony/css-selector": "^7.4|^8.0",
-                "symfony/http-client": "^7.4|^8.0",
-                "symfony/mime": "^7.4|^8.0",
-                "symfony/process": "^7.4|^8.0"
+                "symfony/css-selector": "^6.4|^7.0|^8.0",
+                "symfony/http-client": "^6.4|^7.0|^8.0",
+                "symfony/mime": "^6.4|^7.0|^8.0",
+                "symfony/process": "^6.4|^7.0|^8.0"
             },
             "type": "library",
             "autoload": {
@@ -747,7 +740,7 @@
             "description": "Simulates the behavior of a web browser, allowing you to make requests, click on links and submit forms programmatically",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/browser-kit/tree/v8.0.8"
+                "source": "https://github.com/symfony/browser-kit/tree/v7.4.8"
             },
             "funding": [
                 {
@@ -767,7 +760,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-03-30T15:14:47+00:00"
+            "time": "2026-03-24T13:12:05+00:00"
         },
         {
             "name": "symfony/clock",
@@ -848,20 +841,20 @@
         },
         {
             "name": "symfony/css-selector",
-            "version": "v8.0.9",
+            "version": "v7.4.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
-                "reference": "3665cfade90565430909b906394c73c8739e57d0"
+                "reference": "b75663ed96cf4756e28e3105476f220f92886cc4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/css-selector/zipball/3665cfade90565430909b906394c73c8739e57d0",
-                "reference": "3665cfade90565430909b906394c73c8739e57d0",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/b75663ed96cf4756e28e3105476f220f92886cc4",
+                "reference": "b75663ed96cf4756e28e3105476f220f92886cc4",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.4"
+                "php": ">=8.2"
             },
             "type": "library",
             "autoload": {
@@ -893,7 +886,7 @@
             "description": "Converts CSS selectors to XPath expressions",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/css-selector/tree/v8.0.9"
+                "source": "https://github.com/symfony/css-selector/tree/v7.4.9"
             },
             "funding": [
                 {
@@ -913,7 +906,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-04-18T13:51:42+00:00"
+            "time": "2026-04-18T13:18:21+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -1058,27 +1051,31 @@
         },
         {
             "name": "symfony/http-client",
-            "version": "v8.0.9",
+            "version": "v7.4.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-client.git",
-                "reference": "537c7f164078975b800f3f1c56810791024e4c77"
+                "reference": "7e941c6abf4e3bf7dca160bf0e11ef36a9f832f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-client/zipball/537c7f164078975b800f3f1c56810791024e4c77",
-                "reference": "537c7f164078975b800f3f1c56810791024e4c77",
+                "url": "https://api.github.com/repos/symfony/http-client/zipball/7e941c6abf4e3bf7dca160bf0e11ef36a9f832f6",
+                "reference": "7e941c6abf4e3bf7dca160bf0e11ef36a9f832f6",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.4",
+                "php": ">=8.2",
                 "psr/log": "^1|^2|^3",
+                "symfony/deprecation-contracts": "^2.5|^3",
                 "symfony/http-client-contracts": "~3.4.4|^3.5.2",
+                "symfony/polyfill-php83": "^1.29",
                 "symfony/service-contracts": "^2.5|^3"
             },
             "conflict": {
-                "amphp/amp": "<3",
-                "php-http/discovery": "<1.15"
+                "amphp/amp": "<2.5",
+                "amphp/socket": "<1.1",
+                "php-http/discovery": "<1.15",
+                "symfony/http-foundation": "<6.4"
             },
             "provide": {
                 "php-http/async-client-implementation": "*",
@@ -1087,19 +1084,20 @@
                 "symfony/http-client-implementation": "3.0"
             },
             "require-dev": {
-                "amphp/http-client": "^5.3.2",
-                "amphp/http-tunnel": "^2.0",
+                "amphp/http-client": "^4.2.1|^5.0",
+                "amphp/http-tunnel": "^1.0|^2.0",
                 "guzzlehttp/promises": "^1.4|^2.0",
                 "nyholm/psr7": "^1.0",
                 "php-http/httplug": "^1.0|^2.0",
                 "psr/http-client": "^1.0",
-                "symfony/cache": "^7.4|^8.0",
-                "symfony/dependency-injection": "^7.4|^8.0",
-                "symfony/http-kernel": "^7.4|^8.0",
-                "symfony/messenger": "^7.4|^8.0",
-                "symfony/process": "^7.4|^8.0",
-                "symfony/rate-limiter": "^7.4|^8.0",
-                "symfony/stopwatch": "^7.4|^8.0"
+                "symfony/amphp-http-client-meta": "^1.0|^2.0",
+                "symfony/cache": "^6.4|^7.0|^8.0",
+                "symfony/dependency-injection": "^6.4|^7.0|^8.0",
+                "symfony/http-kernel": "^6.4|^7.0|^8.0",
+                "symfony/messenger": "^6.4|^7.0|^8.0",
+                "symfony/process": "^6.4|^7.0|^8.0",
+                "symfony/rate-limiter": "^6.4|^7.0|^8.0",
+                "symfony/stopwatch": "^6.4|^7.0|^8.0"
             },
             "type": "library",
             "autoload": {
@@ -1130,7 +1128,7 @@
                 "http"
             ],
             "support": {
-                "source": "https://github.com/symfony/http-client/tree/v8.0.9"
+                "source": "https://github.com/symfony/http-client/tree/v7.4.9"
             },
             "funding": [
                 {
@@ -1150,7 +1148,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-04-29T15:02:55+00:00"
+            "time": "2026-04-29T13:25:15+00:00"
         },
         {
             "name": "symfony/http-client-contracts",
@@ -1381,6 +1379,86 @@
             ],
             "support": {
                 "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.37.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/nicolas-grekas",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2026-04-10T17:25:58+00:00"
+        },
+        {
+            "name": "symfony/polyfill-php83",
+            "version": "v1.37.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-php83.git",
+                "reference": "3600c2cb22399e25bb226e4a135ce91eeb2a6149"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php83/zipball/3600c2cb22399e25bb226e4a135ce91eeb2a6149",
+                "reference": "3600c2cb22399e25bb226e4a135ce91eeb2a6149",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "type": "library",
+            "extra": {
+                "thanks": {
+                    "url": "https://github.com/symfony/polyfill",
+                    "name": "symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php83\\": ""
+                },
+                "classmap": [
+                    "Resources/stubs"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill backporting some PHP 8.3+ features to lower PHP versions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php83/tree/v1.37.0"
             },
             "funding": [
                 {
