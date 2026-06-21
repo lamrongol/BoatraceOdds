@@ -45,8 +45,8 @@ jobs:
           composer remove bvp/scraper --no-update || true
           composer install --no-interaction --no-progress
 
-      - name: Require scraper version ^5.0
-        run: composer require bvp/scraper:^5.0 --no-update
+      - name: Require scraper version ^6.0
+        run: composer require bvp/scraper:^6.0 --no-update
 
       - name: Update lock file for scraper
         run: composer update bvp/scraper --with-dependencies
@@ -55,7 +55,7 @@ jobs:
         run: composer install --prefer-dist --no-interaction --no-progress
 
       - name: Scrape Data
-        run: php scraper.php
+        run: php scraper.php v3
 
       - name: Deploy JSON for scraper
         run: |
