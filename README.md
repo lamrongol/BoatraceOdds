@@ -40,7 +40,7 @@ https://lamrongol.github.io/BoatraceOdds/v3/YYYY/YYYYMMDD.json
 | 🏷️ 対象 | 📂 リポジトリ |
 |:--|:--|
 | 🐆 出走表 | [Boatrace Open API for Programs](https://github.com/BoatraceOpenAPI/programs) |
-| 🏆 結果 | [Boatrace Open API for Results](https://github.com/BoatraceOpenAPI/results) |
+| 🏆 結果 | [Boatrace Open API for Results](https://github.com/lamrongol/BoatraceResults) |
 
 ## 📄 ライセンス
 Boatrace Open API for Previews は [MITライセンス](LICENSE) の元で公開されています。
