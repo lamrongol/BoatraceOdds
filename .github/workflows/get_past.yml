@@ -8,6 +8,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
 jobs:
   run_for_past:
     name: Deploy scraper for past
@@ -20,9 +24,9 @@ jobs:
           php-version: "8.5"
 
       - name: Checkout Code
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        uses: actions/checkout@v7
         with:
-          fetch-depth: 0
+          ref: gh-pages
 
       - name: Get Composer cache directory
         id: composer-cache
